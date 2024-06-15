@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DMBS</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container justify-content-center">
+        <h1 class="text-center m-3">Insert Form</h1>
+        <form action="http://localhost:3001/insert" method="POST">
+
+            <div class="form-floating m-3">
+                <input class="form-control" type="text" id="name" name="name" maxlength="20" placeholder="Name"
+                    required>
+                <label for="name">Name:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <input class="form-control" type="email" id="email" name="email" maxlength="20" placeholder="Email"
+                    required>
+                <label for="email">Email:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <label for="phone">Phone Number:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <input class="form-control" type="number" id="empID" name="empID" min="1000" max="9999"
+                    placeholder="Employee ID" required>
+                <label for="empID">Employee ID:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <select class="form-select" id="dpmt" name="dpmt" placeholder="Department" required>
+                    <option value="">Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="IT">IT</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Operations">Operations</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Legal">Legal</option>
+                </select>
+                <label for="dpmt">Department:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <input class="form-control" type="date" id="doj" name="doj" placeholder="Date of Joining" required>
+                <label for="doj">Date of Joining:</label>
+            </div>
+
+            <div class="form-floating m-3">
+                <select class="form-select" id="pos" name="pos" placeholder="Position" required>
+                    <option value="">Select Position</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Assistant Manager">Assistant Manager</option>
+                    <option value="Team Lead">Team Lead</option>
+                    <option value="Senior Developer">Senior Developer</option>
+                    <option value="Junior Developer">Junior Developer</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Analyst">Analyst</option>
+                    <option value="Specialist">Specialist</option>
+                </select>
+                <label for="pos">Position:</label>
+            </div>
+
+            <button class="btn btn-lg btn-success container" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
